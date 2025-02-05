@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+.container, .tasks-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* === Timer Progression === */
+.timer-progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.timer-progress-bar {
+    height: 100%;
+    background-color: #56e60e; /* Couleur pour la session de travail */
+    transition: width 0.5s;
+}
+
+/* === Timer === */
+.timer {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* === Tâches === */
+.tasks-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-input button {
+    padding: 10px;
+    background-color: #56e60e;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles individuels des tâches */
+.task {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar-container {
+    margin-top: 10px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-container .progress {
+    height: 100%;
+    background-color: #56e60e; /* Progression des sous-tâches */
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.subtasks {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.subtask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.subtask label {
+    display: flex;
+    align-items: center;
+}
+
+.subtask input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-subtask, .delete-task {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.trash-container {
+    margin-top: 20px;
+}
+
+.trash-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#trash-list {
+    list-style: none;
+    padding: 0;
+}
+
+.restore-task {
+    margin-left: 10px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

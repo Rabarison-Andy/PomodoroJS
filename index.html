@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Icônes Pomodoro.png">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pomodoro Timer</h1>
+        <div class="progress-container timer-progress-container">
+            <div class="progress-bar timer-progress-bar" id="timer-progress-bar"></div>
+        </div>
+        <p class="timer" id="timer">25:00</p>
+        <div class="button-wrapper">
+            <button id="start">▶ Start</button>
+            <button id="stop">⏸ Stop</button>
+            <button id="reset">🔄 Reset</button>
+        </div>
+    </div>
+    <div class="tasks-container">
+        <h2>📝 Mes tâches</h2>
+        <ul id="task-list"></ul>
+        <div class="task-input">
+            <input type="text" id="task-input" placeholder="Ajouter une tâche...">
+            <button id="add-task">➕</button>
+        </div>
+    </div>
+    <div class="trash-container">
+        <h2>🗑️ Corbeille</h2>
+        <ul id="trash-list"></ul>
+    </div>    
+</body>
+</html>
+<script src="app.js"></script>
